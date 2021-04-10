@@ -1,0 +1,32 @@
+.body{
+	margin:0px;
+	padding:0px;
+}
+.wrapper{
+	margin:0px auto;
+	width:500px;
+	display:flex;
+	justify-content:flex-start;
+	flex-grow:grow;
+	flex-wrap:wrap;
+}
+.box{
+width:150px;
+height:150px;
+margin:10px auto;
+
+}
+.score{
+	width:150px;
+	height:150px;
+	margin:10px auto;
+}
+.text{
+	width:150px;
+	height:150px;
+	margin:10px auto;
+	background:silver;
+	text-align:center;
+	font-size:50px;
+	font-weight:bold;
+}
