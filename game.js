@@ -5,7 +5,7 @@ divZaBodove.innerHTML="0";
 bodovi=0;
 var tiktak=setInterval(prikaziKrticu, 1000);
 slike[Math.floor(Math.random() * 9)].src="mole.png";
-var tiktak=setInterval(smanjiVreme, 1000);
+var interval=setInterval(smanjiVreme, 1000);
 
 vreme.innerHTML="60";
 klik=0;
@@ -22,6 +22,10 @@ function provera(a)
 function smanjiVreme()
 {
 	var staroVreme=parseInt(vreme.innerHTML);
+	if(staroVreme<=10)
+	{
+		vreme.style.color="red";
+	}
 	if(staroVreme==0)
 	{
 		clearInterval(tiktak);
